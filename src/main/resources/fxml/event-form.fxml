@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<VBox spacing="15.0" style="-fx-padding: 25; -fx-background-color: -surface-color;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chrastis.controller.EventFormController">
+    <children>
+        <Text fx:id="formTitle" styleClass="section-title" text="Tambah Event Baru" />
+        <GridPane hgap="10" vgap="10">
+            <columnConstraints>
+                <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="120.0" />
+                <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+            </columnConstraints>
+            <children>
+                <Label text="Judul Event" />
+                <TextField fx:id="titleField" GridPane.columnIndex="1" />
+                <Label text="Deskripsi" GridPane.rowIndex="1" />
+                <TextArea fx:id="descriptionArea" prefHeight="80.0" GridPane.columnIndex="1" GridPane.rowIndex="1" styleClass="modern-text-area" />
+                <Label text="Lokasi" GridPane.rowIndex="2" />
+                <TextField fx:id="locationField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Label text="Tanggal Event" GridPane.rowIndex="3" />
+                <DatePicker fx:id="eventDatePicker" maxWidth="Infinity" GridPane.columnIndex="1" GridPane.rowIndex="3" styleClass="modern-date-picker"/>
+                <Label text="Deadline Tampil" GridPane.rowIndex="4" />
+                <DatePicker fx:id="deadlinePicker" maxWidth="Infinity" GridPane.columnIndex="1" GridPane.rowIndex="4" styleClass="modern-date-picker"/>
+                <Label text="Path Gambar" GridPane.rowIndex="5" />
+                <HBox spacing="10" alignment="CENTER_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                    <Button fx:id="fileChooserButton" onAction="#handleChooseFile" text="Pilih Gambar..." styleClass="file-chooser-button" />
+                    <Label fx:id="imagePathLabel" text="Belum ada gambar dipilih" />
+                </HBox>
+            </children>
+        </GridPane>
+        <HBox alignment="CENTER_RIGHT" spacing="10.0">
+            <Button onAction="#handleCancel" text="Batal" styleClass="action-btn-cancel"/>
+            <Button fx:id="saveButton" onAction="#handleSave" styleClass="action-btn-primary" text="Simpan" />
+        </HBox>
+    </children>
+</VBox>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<StackPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chrastis.controller.EventModalController">
+    <Region fx:id="overlayBackground" style="-fx-background-color: rgba(0,0,0,0.7);" />
+    <VBox fx:id="modalContainer" alignment="CENTER" maxHeight="700" maxWidth="500" spacing="0" style="-fx-background-color: white; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 20, 0, 0, 5);">
+        <HBox alignment="TOP_RIGHT" style="-fx-padding: 15 15 0 15;">
+            <Text fx:id="eventTitleText" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-fill: #1e3a8a;" text="Event dan Acara" wrappingWidth="420.5367709994316" />
+            <Button fx:id="closeButton" onAction="#handleClose" style="-fx-background-color: #dc3545; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-background-radius: 8; -fx-cursor: hand; -fx-padding: 8 12 8 12;" text="✖" />
+        </HBox>
+        <VBox fx:id="eventContent" alignment="CENTER" spacing="0" style="-fx-padding: 0 20 20 20;">
+            <StackPane prefHeight="550" prefWidth="450">
+                <ImageView fx:id="currentEventImageView" fitHeight="530" fitWidth="430" preserveRatio="true" />
+
+                <HBox alignment="CENTER_LEFT" StackPane.alignment="CENTER_LEFT">
+                    <padding><Insets left="10.0" /></padding>
+                    <Button fx:id="prevButton" onAction="#handlePrevImage" style="-fx-background-color: rgba(0,0,0,0.6); -fx-text-fill: white; -fx-font-size: 20px; -fx-background-radius: 50; -fx-cursor: hand; -fx-padding: 15 20 15 20;" text="◀" />
+                </HBox>
+
+                <HBox alignment="CENTER_RIGHT" StackPane.alignment="CENTER_RIGHT">
+                    <padding><Insets right="10.0" /></padding>
+                    <Button fx:id="nextButton" onAction="#handleNextImage" style="-fx-background-color: rgba(0,0,0,0.6); -fx-text-fill: white; -fx-font-size: 20px; -fx-background-radius: 50; -fx-cursor: hand; -fx-padding: 15 20 15 20;" text="▶" />
+                </HBox>
+            </StackPane>
+        </VBox>
+    </VBox>
+</StackPane>

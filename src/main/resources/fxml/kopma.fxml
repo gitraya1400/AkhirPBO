@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chrastis.controller.KopmaController" styleClass="kopma-container">
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="15.0" styleClass="kopma-header">
+            <children>
+                <Text text="🛒 KOPMA Store" styleClass="kopma-title" />
+                <Region HBox.hgrow="ALWAYS" />
+                <VBox alignment="CENTER_RIGHT" spacing="5.0">
+                    <children>
+                        <Text text="Kredit Anda:" styleClass="credit-label" />
+                        <Text fx:id="kreditText" text="0" styleClass="credit-value" />
+                    </children>
+                </VBox>
+                <Button fx:id="backButton" mnemonicParsing="false" onAction="#handleBack" text="← Kembali" styleClass="modern-back-button" />
+            </children>
+            <padding>
+                <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+            </padding>
+        </HBox>
+    </top>
+
+    <center>
+        <ScrollPane fitToWidth="true" styleClass="kopma-scroll">
+            <content>
+                <VBox spacing="20.0" styleClass="kopma-content">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" spacing="15.0">
+                            <children>
+                                <Text text="Tukar Kredit dengan Barang" styleClass="section-title" />
+                                <Region HBox.hgrow="ALWAYS" />
+                                <ComboBox fx:id="categoryFilter" styleClass="filter-combo" promptText="Filter Kategori" onAction="#handleCategoryFilter" />
+                                <TextField fx:id="searchField" styleClass="search-field" promptText="🔍 Cari barang..." />
+                            </children>
+                        </HBox>
+
+                        <TableView fx:id="barangTable"  styleClass="modern-table">
+                            <columns>
+                                <TableColumn fx:id="namaBarangColumn" prefWidth="200.0" text="Nama Barang" styleClass="table-column" />
+                                <TableColumn fx:id="kategoriColumn" prefWidth="120.0" text="Kategori" styleClass="table-column" />
+                                <TableColumn fx:id="hargaKreditColumn" prefWidth="120.0" text="Harga (Kredit)" styleClass="table-column" />
+                                <TableColumn fx:id="stokColumn" prefWidth="80.0" text="Stok" styleClass="table-column" />
+                                <TableColumn fx:id="deskripsiColumn" prefWidth="200.0" text="Deskripsi" styleClass="table-column" />
+                                <TableColumn fx:id="aksiColumn" prefWidth="120.0" text="Aksi" styleClass="table-column" />
+                            </columns>
+                        </TableView>
+
+                        <VBox spacing="15.0" styleClass="transaction-history">
+                            <children>
+                                <Text text="Riwayat Transaksi Anda" styleClass="section-subtitle" />
+                                <TableView fx:id="transaksiTable" styleClass="modern-table">
+                                    <columns>
+                                        <TableColumn fx:id="transaksiBarangColumn" prefWidth="180.0" text="Barang" styleClass="table-column" />
+                                        <TableColumn fx:id="transaksiKodeColumn" prefWidth="150.0" text="Kode Penukaran" styleClass="table-column" />
+                                        <TableColumn fx:id="transaksiTanggalColumn" prefWidth="120.0" text="Tanggal" styleClass="table-column" />
+                                        <TableColumn fx:id="transaksiStatusColumn" prefWidth="120.0" text="Status" styleClass="table-column" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </VBox>
+                    </children>
+                    <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </padding>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </center>
+</BorderPane>

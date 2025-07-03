@@ -1,0 +1,1287 @@
+/* ===== STAT KREDIT MODERN THEME - Logo Inspired Design ===== */
+
+/* ===== LOADING SCREEN STYLES ===== */
+.loading-container {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #f8fafc, #e2e8f0, #fef3c7);
+    -fx-padding: 40px;
+    -fx-min-width: 600;
+    -fx-min-height: 700;
+    -fx-alignment: center;
+    -fx-padding: 40;
+}
+
+.logo-container {
+    -fx-background-color: rgba(255, 255, 255, 0.98);
+    -fx-background-radius: 35;
+    -fx-padding: 60 80;
+    -fx-effect: dropshadow(gaussian, rgba(30, 58, 138, 0.3), 30, 0.4, 0, 10);
+    -fx-alignment: center;
+    -fx-spacing: 25;
+    -fx-max-width: 600;
+}
+
+/* STAT CREDIT Text */
+.stat-credit-logo {
+    -fx-spacing: 5;
+    -fx-alignment: center;
+}
+
+.stat-text {
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-font-size: 42px;
+    -fx-font-weight: bold;
+    -fx-fill: linear-gradient(from 0% 0% to 100% 0%, #1e3a8a, #1d4ed8);
+    -fx-letter-spacing: 3px;
+    -fx-effect: dropshadow(gaussian, rgba(30, 58, 138, 0.4), 5, 0.4, 2, 2);
+}
+
+.credit-text {
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-font-size: 42px;
+    -fx-font-weight: bold;
+    -fx-fill: linear-gradient(from 0% 0% to 100% 0%, #fbbf24, #f59e0b);
+    -fx-letter-spacing: 3px;
+    -fx-effect: dropshadow(gaussian, rgba(251, 191, 36, 0.4), 5, 0.4, 2, 2);
+}
+
+.spacing-text {
+    -fx-font-size: 42px;
+}
+
+/* CHRASTIS Title */
+.chrastis-title {
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-fill: linear-gradient(from 0% 0% to 100% 0%, #1e3a8a, #3730a3);
+    -fx-letter-spacing: 4px;
+    -fx-text-alignment: center;
+}
+
+.system-subtitle {
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-font-size: 16px;
+    -fx-fill: #1e40af;
+    -fx-text-alignment: center;
+    -fx-font-style: italic;
+}
+
+/* Loading Section */
+.loading-text {
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-font-size: 16px;
+    -fx-fill: #1e40af;
+    -fx-font-weight: 500;
+}
+
+.loading-progress {
+    -fx-accent: linear-gradient(to right, #1e3a8a, #fbbf24);
+    -fx-background-color: rgba(255, 255, 255, 0.4);
+    -fx-background-radius: 25;
+    -fx-pref-height: 18;
+    -fx-pref-width: 350;
+    -fx-effect: dropshadow(gaussian, rgba(30, 58, 138, 0.3), 8, 0.4, 0, 4);
+}
+
+.loading-progress .bar {
+    -fx-background-color: linear-gradient(to right, #1e3a8a, #1d4ed8, #fbbf24);
+    -fx-background-radius: 25;
+    -fx-background-insets: 0;
+}
+
+.loading-percentage {
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #1e40af;
+    -fx-font-weight: 600;
+}
+
+/* Status Section */
+.status-item {
+    -fx-spacing: 10;
+    -fx-alignment: center;
+}
+
+.status-icon {
+    -fx-font-size: 16px;
+    -fx-fill: #1e3a8a;
+}
+
+.status-text {
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-font-size: 13px;
+    -fx-fill: #1e40af;
+    -fx-font-weight: 400;
+}
+
+/* Footer */
+.footer-copyright {
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-font-size: 12px;
+    -fx-fill: #1e3a8a;
+    -fx-text-alignment: center;
+    -fx-font-weight: 500;
+}
+
+.footer-tagline {
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-font-size: 11px;
+    -fx-fill: #64748b;
+    -fx-text-alignment: center;
+    -fx-font-style: italic;
+}
+
+/* ===== LOGIN SCREEN STYLES ===== */
+.login-container {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #f8fafc, #e2e8f0, #fef3c7);
+    -fx-padding: 40px;
+    -fx-min-width: 600;
+    -fx-min-height: 700;
+}
+
+.login-form {
+    -fx-background-color: rgba(255, 255, 255, 0.98);
+    -fx-background-radius: 25;
+    -fx-padding: 40;
+    -fx-effect: dropshadow(gaussian, rgba(30, 58, 138, 0.25), 20, 0.4, 0, 8);
+    -fx-spacing: 25;
+}
+
+/* Form Elements */
+.form-label {
+    -fx-text-fill: #1e3a8a;
+    -fx-font-size: 13px;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-font-weight: 600;
+}
+
+.modern-textfield {
+    -fx-pref-height: 45px;
+    -fx-pref-width: 100%;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cbd5e1;
+    -fx-border-width: 2px;
+    -fx-padding: 12 16;
+    -fx-font-size: 14px;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-text-fill: #1e3a8a;
+    -fx-prompt-text-fill: #94a3b8;
+}
+
+.modern-textfield:focused {
+    -fx-border-color: linear-gradient(to right, #1e3a8a, #fbbf24);
+    -fx-effect: dropshadow(gaussian, rgba(251, 191, 36, 0.4), 12, 0.4, 0, 4);
+}
+
+/* Login Button */
+.login-button {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #1e3a8a, #1d4ed8, #fbbf24);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-background-radius: 18;
+    -fx-padding: 15 30;
+    -fx-cursor: hand;
+    -fx-pref-width: 280;
+    -fx-effect: dropshadow(gaussian, rgba(30, 58, 138, 0.4), 12, 0.4, 0, 6);
+}
+
+.login-button:hover {
+    -fx-opacity: 0.95;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(gaussian, rgba(251, 191, 36, 0.5), 18, 0.5, 0, 8);
+}
+
+/* ===== NAVBAR SECTION ===== */
+.navbar-container {
+    -fx-effect: dropshadow(gaussian, rgb(255, 255, 255), 12, 0, 0, 4);
+}
+
+.navbar {
+    -fx-background-color: linear-gradient(to right, #f5f5f5, #b8bdcc, #75749f);
+    -fx-padding: 15 25;
+}
+
+.logo-section {
+    -fx-spacing: 2;
+}
+
+.logo-container {
+    -fx-alignment: center-left;
+}
+
+.logo-icon {
+    -fx-font-size: 24px;
+    -fx-fill: #fbbf24;
+}
+
+.logo-text-stat {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-fill: #fff;
+    -fx-font-family: "Segoe UI Semibold";
+}
+
+.logo-text-credit {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-fill: #fbbf24;
+    -fx-font-family: "Segoe UI Semibold";
+}
+
+.logo-subtitle {
+    -fx-font-size: 13px;
+    -fx-fill: rgba(255,255,255,0.9);
+    -fx-font-style: italic;
+}
+
+.user-section {
+    -fx-spacing: 15;
+}
+
+.welcome-nav-text {
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-fill: #fff;
+}
+
+.nav-subtitle {
+    -fx-font-size: 12px;
+    -fx-fill: rgba(255,255,255,0.8);
+}
+
+.nav-notification-btn {
+    -fx-background-color: rgba(251, 191, 36, 0.2);
+    -fx-text-fill: #fbbf24;
+    -fx-background-radius: 20;
+    -fx-font-size: 14px;
+    -fx-padding: 8 12;
+    -fx-cursor: hand;
+}
+
+.nav-notification-btn:hover {
+    -fx-background-color: rgba(251, 191, 36, 0.3);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.nav-logout-btn {
+    -fx-background-color: #dc2626;
+    -fx-text-fill: #fff;
+    -fx-background-radius: 8;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+}
+
+.nav-logout-btn:hover {
+    -fx-background-color: #b91c1c;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* ===== SIDEBAR SECTION ===== */
+.sidebar {
+    -fx-background-color: linear-gradient(from 0% 0% to 0% 100%, #fefce8, #fef3c7, #e0e7ff);
+    -fx-effect: dropshadow(gaussian, rgba(30, 58, 138, 0.15), 15, 0, 4, 0);
+}
+
+.sidebar-header {
+    -fx-padding: 5 0 10 0;
+}
+
+.sidebar-header-icon {
+    -fx-font-size: 16px;
+    -fx-fill: #1e3a8a;
+}
+
+.sidebar-header-text {
+    -fx-font-size: 16px;
+    -fx-font-weight: 600;
+    -fx-fill: #1e3a8a;
+}
+
+/* Mini Stats Cards in Sidebar */
+.mini-stats-container {
+    -fx-padding: 0 0 15 0;
+}
+
+.mini-stat-card {
+    -fx-background-radius: 15;
+    -fx-padding: 15 10;
+    -fx-spacing: 5;
+    -fx-effect: dropshadow(gaussian, rgba(30, 58, 138, 0.2), 10, 0.3, 0, 4);
+}
+
+.mini-card-green {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #1e3a8a, #1d4ed8);
+}
+
+.mini-card-yellow {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #fbbf24, #f59e0b);
+}
+
+.mini-stat-icon {
+    -fx-font-size: 16px;
+    -fx-fill: #fff;
+}
+
+.mini-stat-value {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-fill: #fff;
+}
+
+/* ===== SIDEBAR MENU BUTTONS - ENHANCED FOR SPECIFIC MENUS ===== */
+.menu-items {
+    -fx-spacing: 10;
+}
+
+.sidebar-menu-button {
+    -fx-background-radius: 18;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-padding: 18 20;
+    -fx-cursor: hand;
+    -fx-alignment: center-left;
+    -fx-effect: dropshadow(gaussian, rgba(30, 58, 138, 0.3), 12, 0.4, 0, 5);
+}
+
+/* AJUKAN KREDIT - Enhanced Navy Blue Gradient */
+.menu-green {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #1e3a8a, #1d4ed8, #3b82f6);
+}
+
+.menu-green:hover {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #1e40af, #2563eb, #60a5fa);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-effect: dropshadow(gaussian, rgba(59, 130, 246, 0.5), 20, 0.5, 0, 8);
+}
+
+/* LELANG PENEMPATAN - Enhanced Gold Gradient */
+.menu-yellow {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #fbbf24, #f59e0b, #d97706);
+    -fx-text-fill: #fff;
+}
+
+.menu-yellow:hover {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #f59e0b, #d97706, #b45309);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-effect: dropshadow(gaussian, rgba(251, 191, 36, 0.5), 20, 0.5, 0, 8);
+}
+
+/* KOPMA STORE - Enhanced Blue-Gold Combination */
+.menu-blue {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #1e40af, #3b82f6, #fbbf24);
+}
+
+.menu-blue:hover {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #1d4ed8, #60a5fa, #f59e0b);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-effect: dropshadow(gaussian, rgba(59, 130, 246, 0.5), 20, 0.5, 0, 8);
+}
+
+.menu-admin {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #64748b, #475569);
+}
+
+.menu-admin:hover {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #475569, #334155);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.user-info-sidebar {
+    -fx-padding: 15 0 0 0;
+    -fx-border-color: rgba(30, 58, 138, 0.2);
+    -fx-border-width: 1 0 0 0;
+}
+
+.sidebar-welcome-text {
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+    -fx-fill: #1e3a8a;
+}
+
+.sidebar-user-role {
+    -fx-font-size: 12px;
+    -fx-fill: #64748b;
+}
+
+.sidebar-label-bold {
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+    -fx-fill: #1e3a8a;
+}
+
+.sidebar-value {
+    -fx-font-size: 11px;
+    -fx-fill: #fbbf24;
+    -fx-font-weight: 600;
+}
+
+/* ===== MAIN CONTENT AREA ===== */
+.main-content-scroll {
+    -fx-background-color: transparent;
+}
+
+.main-content {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #f8fafc, #e2e8f0, #fefce8);
+}
+
+/* Welcome Section */
+.welcome-section {
+    -fx-background-color: rgba(255, 255, 255, 0.95);
+    -fx-background-radius: 20;
+    -fx-padding: 25;
+    -fx-effect: dropshadow(gaussian, rgba(30, 58, 138, 0.15), 15, 0.3, 0, 5);
+}
+
+.welcome-icon {
+    -fx-font-size: 24px;
+    -fx-fill: #1e3a8a;
+}
+
+.welcome-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-fill: #1e3a8a;
+}
+
+.welcome-subtitle {
+    -fx-font-size: 14px;
+    -fx-fill: #64748b;
+    -fx-padding: 5 0 0 34;
+}
+
+/* Main KPI Cards */
+.main-kpi-container {
+    -fx-spacing: 20;
+}
+
+.main-kpi-card {
+    -fx-background-radius: 20;
+    -fx-padding: 30;
+    -fx-spacing: 10;
+    -fx-effect: dropshadow(gaussian, rgba(30, 58, 138, 0.2), 18, 0.4, 0, 6);
+    -fx-alignment: center;
+}
+
+.main-card-green {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #1e3a8a, #1d4ed8, #3b82f6);
+}
+
+.main-card-yellow {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #fbbf24, #f59e0b, #d97706);
+}
+
+.main-card-blue {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #1e40af, #3b82f6, #fbbf24);
+}
+
+.main-kpi-icon {
+    -fx-font-size: 36px;
+    -fx-fill: rgba(255,255,255,0.95);
+}
+
+.main-kpi-label {
+    -fx-font-size: 14px;
+    -fx-fill: rgba(255,255,255,0.9);
+    -fx-font-weight: 500;
+}
+
+.main-kpi-value {
+    -fx-font-size: 32px;
+    -fx-text-fill: #fff;
+    -fx-font-weight: bold;
+}
+
+/* ===== QUICK ACTIONS SECTION - ENHANCED FOR SPECIFIC BUTTONS ===== */
+.quick-actions-section {
+    -fx-background-color: rgba(255, 255, 255, 0.95);
+    -fx-background-radius: 20;
+    -fx-padding: 25;
+    -fx-effect: dropshadow(gaussian, rgba(30, 58, 138, 0.15), 15, 0.3, 0, 5);
+}
+
+.section-icon {
+    -fx-font-size: 20px;
+    -fx-fill: #1e3a8a;
+}
+
+.section-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: 600;
+    -fx-fill: #1e3a8a;
+}
+
+.quick-actions-buttons {
+    -fx-spacing: 18;
+}
+
+.quick-action-btn {
+    -fx-background-radius: 18;
+    -fx-text-fill: #fff;
+    -fx-font-size: 15px;
+    -fx-font-weight: 700;
+    -fx-padding: 20 28;
+    -fx-cursor: hand;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(30, 58, 138, 0.25), 15, 0.4, 0, 6);
+}
+
+/* Quick Action - Ajukan Kredit - Enhanced */
+.quick-btn-green {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #1e3a8a, #1d4ed8, #3b82f6);
+}
+
+.quick-btn-green:hover {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #1e40af, #2563eb, #60a5fa);
+    -fx-scale-x: 1.15;
+    -fx-scale-y: 1.15;
+    -fx-effect: dropshadow(gaussian, rgba(59, 130, 246, 0.5), 25, 0.5, 0, 10);
+}
+
+/* Quick Action - Lelang - Enhanced */
+.quick-btn-yellow {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #fbbf24, #f59e0b, #d97706);
+    -fx-text-fill: #fff;
+}
+
+.quick-btn-yellow:hover {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #f59e0b, #d97706, #b45309);
+    -fx-scale-x: 1.15;
+    -fx-scale-y: 1.15;
+    -fx-effect: dropshadow(gaussian, rgba(251, 191, 36, 0.5), 25, 0.5, 0, 10);
+}
+
+/* Quick Action - KOPMA - Enhanced */
+.quick-btn-blue {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #1e40af, #3b82f6, #fbbf24);
+}
+
+.quick-btn-blue:hover {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #1d4ed8, #60a5fa, #f59e0b);
+    -fx-scale-x: 1.15;
+    -fx-scale-y: 1.15;
+    -fx-effect: dropshadow(gaussian, rgba(59, 130, 246, 0.5), 25, 0.5, 0, 10);
+}
+
+/* Recent Activities Section */
+.recent-activities-section {
+    -fx-background-color: rgba(255, 255, 255, 0.95);
+    -fx-background-radius: 20;
+    -fx-padding: 25;
+    -fx-effect: dropshadow(gaussian, rgba(30, 58, 138, 0.15), 15, 0.3, 0, 5);
+}
+
+.activities-list {
+    -fx-spacing: 12;
+}
+
+.activity-item {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #f1f5f9, #fefce8);
+    -fx-background-radius: 12;
+    -fx-padding: 15;
+}
+
+.activity-icon {
+    -fx-font-size: 16px;
+    -fx-fill: #1e3a8a;
+}
+
+.activity-title {
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+    -fx-fill: #1e3a8a;
+}
+
+.activity-time {
+    -fx-font-size: 11px;
+    -fx-fill: #64748b;
+}
+
+/* TabPane Section */
+.main-tabpane {
+    -fx-background-color: rgba(255, 255, 255, 0.95);
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(gaussian, rgba(30, 58, 138, 0.15), 15, 0.3, 0, 5);
+}
+
+.main-tabpane .tab-header-area {
+    -fx-padding: 0;
+}
+
+.main-tabpane .tab-header-area .tab-header-background {
+    -fx-background-color: transparent;
+}
+
+.main-tabpane .tab {
+    -fx-background-color: transparent;
+    -fx-padding: 12 20;
+    -fx-border-color: transparent;
+    -fx-border-width: 0 0 3 0;
+}
+
+.main-tabpane .tab:selected {
+    -fx-border-color: linear-gradient(to right, #1e3a8a, #fbbf24);
+    -fx-background-color: rgba(30, 58, 138, 0.05);
+}
+
+.main-tabpane .tab .tab-label {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 13px;
+    -fx-font-weight: 500;
+}
+
+.main-tabpane .tab:selected .tab-label {
+    -fx-text-fill: #1e3a8a;
+    -fx-font-weight: 600;
+}
+
+.main-tabpane > .tab-content-area {
+    -fx-background-color: rgba(255, 255, 255, 0.98);
+    -fx-padding: 20;
+    -fx-background-radius: 0 0 20 20;
+}
+
+.tab-section-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: 600;
+    -fx-fill: #1e3a8a;
+    -fx-padding: 0 0 10 0;
+}
+
+/* Table Styling */
+.modern-table {
+    -fx-background-color: rgba(255, 255, 255, 0.98);
+    -fx-table-cell-border-color: rgba(30, 58, 138, 0.1);
+    -fx-font-size: 12px;
+    -fx-border-color: rgba(30, 58, 138, 0.2);
+    -fx-border-width: 1;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+}
+
+.modern-table .column-header-background {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #f1f5f9, #fefce8);
+    -fx-background-radius: 12 12 0 0;
+}
+
+.modern-table .column-header {
+    -fx-background-color: transparent;
+    -fx-font-weight: 600;
+    -fx-font-size: 12px;
+    -fx-text-fill: #1e3a8a;
+    -fx-padding: 12 8;
+}
+
+.modern-table .table-row-cell {
+    -fx-background-color: rgba(255, 255, 255, 0.95);
+    -fx-padding: 8;
+}
+
+.modern-table .table-row-cell:hover {
+    -fx-background-color: rgba(30, 58, 138, 0.05);
+}
+
+.modern-table .table-row-cell:selected {
+    -fx-background-color: rgba(251, 191, 36, 0.15);
+}
+
+/* Action Button in Table */
+.action-btn-info {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #1e40af, #3b82f6);
+    -fx-text-fill: #fff;
+    -fx-font-size: 11px;
+    -fx-background-radius: 8;
+    -fx-padding: 6 12;
+    -fx-cursor: hand;
+}
+
+.action-btn-info:hover {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #1d4ed8, #60a5fa);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.action-btn-success {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #1e3a8a, #1d4ed8);
+    -fx-text-fill: #fff;
+    -fx-font-size: 11px;
+    -fx-background-radius: 8;
+    -fx-padding: 6 12;
+    -fx-cursor: hand;
+}
+
+.action-btn-success:hover {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #1e40af, #2563eb);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.action-btn-warning {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #fbbf24, #f59e0b);
+    -fx-text-fill: #fff;
+    -fx-font-size: 11px;
+    -fx-background-radius: 8;
+    -fx-padding: 6 12;
+    -fx-cursor: hand;
+}
+
+.action-btn-warning:hover {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #f59e0b, #d97706);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.action-btn-danger {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #dc2626, #b91c1c);
+    -fx-text-fill: #fff;
+    -fx-font-size: 11px;
+    -fx-background-radius: 8;
+    -fx-padding: 6 12;
+    -fx-cursor: hand;
+}
+
+.action-btn-danger:hover {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #b91c1c, #991b1b);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #f8fafc, #e2e8f0, #fefce8);
+}
+
+/* Form Styling */
+.form-container {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #f8fafc, #e2e8f0, #fefce8);
+}
+
+.form-header {
+    -fx-background-color: linear-gradient(to right, #1e3a8a, #1d4ed8, #3730a3);
+}
+
+.form-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-fill: #fff;
+}
+
+.back-btn {
+    -fx-background-color: rgba(251, 191, 36, 0.2);
+    -fx-text-fill: #fbbf24;
+    -fx-background-radius: 10;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+}
+
+.back-btn:hover {
+    -fx-background-color: rgba(251, 191, 36, 0.3);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.submit-btn {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #1e3a8a, #fbbf24);
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-background-radius: 10;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+}
+
+.submit-btn:hover {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #1e40af, #f59e0b);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* Kopma & Lelang Specific */
+.kopma-container, .lelang-container {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #f8fafc, #e2e8f0, #fefce8);
+}
+
+.kopma-header, .lelang-header {
+    -fx-background-color: linear-gradient(to right, #1e3a8a, #1d4ed8, #3730a3);
+}
+
+.kopma-title, .lelang-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-fill: #fff;
+}
+
+.credit-label {
+    -fx-font-size: 12px;
+    -fx-fill: rgba(255,255,255,0.9);
+}
+
+.credit-value {
+    -fx-font-size: 16px;
+    -fx-fill: #fbbf24;
+    -fx-font-weight: bold;
+}
+
+/* Additional KPI info labels */
+.kpi-info {
+    -fx-font-size: 11px;
+    -fx-text-fill: rgba(255,255,255,0.8);
+    -fx-font-weight: 500;
+}
+
+
+/* ===== NOTIFICATION POPUP STYLES ===== */
+.notification-popup-container {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: #e2e8f0;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 15, 0, 0, 5);
+}
+
+.notification-popup-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-fill: #1e3a8a;
+}
+
+.notification-list-view {
+    -fx-background-color: transparent;
+}
+
+.notification-list-view .list-cell {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent #e2e8f0 transparent;
+    -fx-border-width: 1px;
+    -fx-padding: 10px;
+}
+
+.notification-list-view .list-cell:last-child {
+    -fx-border-color: transparent;
+}
+
+.notification-item-message {
+    -fx-font-size: 13px;
+    -fx-fill: #334155;
+}
+
+.notification-item-date {
+    -fx-font-size: 11px;
+    -fx-fill: #94a3b8;
+}
+
+/* Style untuk notifikasi yang belum dibaca */
+.notification-item-unread {
+    -fx-background-color: #eff6ff; /* Warna biru muda */
+}
+
+/* Tambahkan ini di mana saja di dalam file styles.css Anda */
+
+.admin-menu-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #475569; /* Warna teks abu-abu tua */
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-font-size: 14px;
+    -fx-padding: 15 25;
+    -fx-cursor: hand;
+    -fx-alignment: center-left;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: transparent;
+    -fx-border-width: 0 0 0 4; /* Garis di kiri, awalnya transparan */
+    -fx-pref-width: 250px;
+}
+
+.admin-menu-button:hover {
+    -fx-background-color: #eef2ff; /* Warna latar saat hover */
+    -fx-text-fill: #312e81; /* Warna teks saat hover */
+}
+
+.admin-menu-button.active {
+    -fx-background-color: #e0e7ff; /* Warna latar untuk tombol aktif */
+    -fx-text-fill: #1e1b4b; /* Warna teks tebal untuk tombol aktif */
+    -fx-border-color: #4f46e5; /* Warna garis di kiri untuk tombol aktif */
+}
+
+/* ========================================================== */
+/* =============== STYLE TABEL MODERN BARU ================== */
+/* ========================================================== */
+
+.modern-table {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e2e8f0; /* Border abu-abu muda di sekeliling tabel */
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-selection-bar: #dbeafe; /* Warna saat baris dipilih */
+    -fx-selection-bar-text: #1e3a8a;
+}
+
+/* Mengatur header tabel */
+.modern-table .column-header-background {
+    -fx-background-color: #f8fafc; /* Latar belakang header sangat terang */
+    -fx-background-radius: 10px 10px 0 0; /* Sudut tumpul hanya di atas */
+    -fx-background-insets: 0;
+}
+
+.modern-table .column-header {
+    -fx-background-color: transparent;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-font-size: 13px;
+    -fx-text-fill: #1e3a8a; /* Warna teks biru tua */
+    -fx-padding: 14px 10px;
+}
+
+/* Mengatur baris data */
+.modern-table .table-row-cell {
+    -fx-background-color: #ffffff;
+    -fx-padding: 12px 10px;
+    -fx-border-color: transparent transparent #f1f5f9 transparent; /* Garis tipis di bawah setiap baris */
+    -fx-border-width: 1px;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 13px;
+    -fx-text-fill: #334155;
+}
+
+/* Efek saat kursor di atas baris */
+.modern-table .table-row-cell:hover {
+    -fx-background-color: #f1f5f9; /* Warna latar sedikit abu-abu */
+}
+
+/* Menghilangkan border vertikal antar sel */
+.modern-table .column-header,
+.modern-table .table-cell {
+    -fx-border-color: transparent;
+}
+
+/* ========================================================== */
+/* =============== STYLE TABEL MODERN BARU ================== */
+/* ========================================================== */
+
+.modern-table {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e2e8f0; /* Border abu-abu muda di sekeliling tabel */
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-selection-bar: #dbeafe; /* Warna saat baris dipilih */
+    -fx-selection-bar-text: #1e3a8a;
+}
+
+/* Mengatur header tabel */
+.modern-table .column-header-background {
+    -fx-background-color: #f8fafc; /* Latar belakang header sangat terang */
+    -fx-background-radius: 10px 10px 0 0; /* Sudut tumpul hanya di atas */
+    -fx-background-insets: 0;
+}
+
+.modern-table .column-header {
+    -fx-background-color: transparent;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-font-size: 13px;
+    -fx-text-fill: #1e3a8a; /* Warna teks biru tua */
+    -fx-padding: 14px 10px;
+}
+
+/* Mengatur baris data */
+.modern-table .table-row-cell {
+    -fx-background-color: #ffffff;
+    -fx-padding: 12px 10px;
+    -fx-border-color: transparent transparent #f1f5f9 transparent; /* Garis tipis di bawah setiap baris */
+    -fx-border-width: 1px;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 13px;
+    -fx-text-fill: #334155;
+}
+
+/* Efek saat kursor di atas baris */
+.modern-table .table-row-cell:hover {
+    -fx-background-color: #f1f5f9; /* Warna latar sedikit abu-abu */
+}
+
+/* Menghilangkan border vertikal antar sel */
+.modern-table .column-header,
+.modern-table .table-cell {
+    -fx-border-color: transparent;
+}
+
+/* ========================================================== */
+/* ========= STYLE KHUSUS UNTUK TABEL LELANG UTAMA ========== */
+/* ========================================================== */
+
+.lelang-table {
+    -fx-background-color: white;
+    -fx-border-color: #fcd34d; /* Border warna emas muda */
+    -fx-border-width: 2px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-effect: dropshadow(gaussian, rgba(251, 191, 36, 0.2), 15, 0.4, 0, 4);
+}
+
+/* Header tabel dengan gradient keemasan */
+.lelang-table .column-header-background {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #fffbeb, #fef3c7);
+    -fx-background-radius: 10px 10px 0 0;
+    -fx-background-insets: 0;
+}
+
+.lelang-table .column-header {
+    -fx-background-color: transparent;
+    -fx-font-family: "Segoe UI Black";
+    -fx-font-size: 14px;
+    -fx-text-fill: #92400e; /* Coklat tua */
+    -fx-padding: 16px 10px;
+}
+
+/* Baris data */
+.lelang-table .table-row-cell {
+    -fx-background-color: white;
+    -fx-padding: 14px 10px;
+    -fx-border-color: transparent transparent #fef3c7 transparent;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+    -fx-transition: all 0.2s ease-in-out;
+}
+
+/* Efek hover yang lebih berwarna */
+.lelang-table .table-row-cell:hover {
+    -fx-background-color: #fffbeb; /* Kuning sangat muda */
+    -fx-scale-x: 1.01; /* Sedikit membesar saat di-hover */
+    -fx-scale-y: 1.01;
+    -fx-border-color: transparent transparent #fcd34d transparent;
+}
+
+/* Efek saat baris diklik/dipilih */
+.lelang-table .table-row-cell:selected {
+    -fx-background-color: linear-gradient(to right, #fbbf24, #f59e0b);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.lelang-table .table-row-cell:selected .text {
+    -fx-fill: white;
+}
+
+/* Menghilangkan border vertikal antar sel */
+.lelang-table .column-header,
+.lelang-table .table-cell {
+    -fx-border-color: transparent;
+}
+
+
+/* ========================================================== */
+/* ========= STYLE TOMBOL KEMBALI - VERSI ORANYE ============ */
+/* ========================================================== */
+
+.modern-back-button {
+    -fx-background-color: #f97316; /* Warna oranye solid */
+    -fx-text-fill: white;
+    -fx-background-radius: 8px; /* Sudut sedikit tumpul, sama seperti tombol logout */
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 4, 0, 0, 2);
+}
+
+.modern-back-button:hover {
+    -fx-background-color: #ea580c; /* Warna oranye lebih gelap saat hover */
+    -fx-scale-x: 1.05; /* Efek membesar saat hover */
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 8, 0, 0, 3);
+}
+
+.modern-back-button:pressed {
+    -fx-scale-x: 1; /* Kembali ke ukuran normal saat ditekan */
+    -fx-scale-y: 1;
+    -fx-background-color: #c2410c; /* Warna oranye sangat gelap saat ditekan */
+}
+
+
+/* ========================================================== */
+/* ========= STYLE BARU UNTUK FILTER DAN SEARCH BAR ========= */
+/* ========================================================== */
+
+/* Untuk ComboBox (Semua Tahun, Kategori, Lokasi) */
+.filter-combo {
+    -fx-background-color: white;
+    -fx-border-color: #d1d5db; /* Abu-abu muda */
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 13px;
+    -fx-pref-height: 38px;
+}
+
+/* Bagian panah di ComboBox */
+.filter-combo .arrow-button {
+    -fx-background-color: #f3f4f6;
+    -fx-background-radius: 0 8px 8px 0;
+    -fx-padding: 8px;
+}
+.filter-combo .arrow {
+    -fx-background-color: #4b5563; /* Warna panah abu-abu tua */
+}
+
+/* Efek saat kursor di atas ComboBox */
+.filter-combo:hover {
+    -fx-border-color: #4f46e5; /* Border warna Indigo */
+}
+
+/* Untuk TextField (Cari Barang) */
+.search-field {
+    -fx-background-color: white;
+    -fx-border-color: #d1d5db;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 13px;
+    -fx-prompt-text-fill: #9ca3af; /* Warna teks prompt lebih pudar */
+    -fx-padding: 8px 12px;
+    -fx-pref-height: 38px;
+}
+
+/* Efek saat kolom pencarian diklik/fokus */
+.search-field:focused {
+    -fx-border-color: #4f46e5;
+    -fx-effect: dropshadow(gaussian, rgba(79, 70, 229, 0.2), 5, 0, 0, 1);
+}
+
+/* Untuk tampilan dropdown list di ComboBox */
+.combo-box-popup .list-view {
+    -fx-background-color: white;
+    -fx-border-color: #e5e7eb;
+    -fx-background-insets: 0;
+}
+.combo-box-popup .list-cell {
+    -fx-background-color: white;
+    -fx-text-fill: #374151;
+    -fx-padding: 10px;
+}
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: #eef2ff; /* Latar biru sangat muda saat hover */
+}
+.combo-box-popup .list-cell:filled:selected {
+    -fx-background-color: #4f46e5; /* Latar Indigo saat dipilih */
+    -fx-text-fill: white;
+}
+
+.modern-text-area {
+    -fx-background-color: white;
+    -fx-border-color: #d1d5db;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 13px;
+    -fx-padding: 8px 12px;
+}
+
+.modern-text-area:focused {
+    -fx-border-color: #4f46e5;
+    -fx-effect: dropshadow(gaussian, rgba(79, 70, 229, 0.2), 5, 0, 0, 1);
+}
+
+.modern-date-picker {
+    -fx-background-color: white;
+    -fx-border-color: #d1d5db;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 13px;
+    -fx-pref-height: 38px;
+}
+
+.modern-date-picker:focused {
+    -fx-border-color: #4f46e5;
+    -fx-effect: dropshadow(gaussian, rgba(79, 70, 229, 0.2), 5, 0, 0, 1);
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: #f3f4f6;
+    -fx-background-radius: 0 8px 8px 0;
+}
+
+.file-chooser-button {
+    -fx-background-color: #cbd5e1;
+    -fx-text-fill: #1e293b;
+    -fx-background-radius: 8px;
+    -fx-font-size: 12px;
+    -fx-font-weight: 500;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+}
+
+.file-chooser-button:hover {
+    -fx-background-color: #94a3b8;
+    -fx-text-fill: white;
+}
+
+/* ========================================================== */
+/* ========= STYLE BARU UNTUK TOMBOL AKSI UTAMA ============= */
+/* ========================================================== */
+
+/* Tombol Aksi Utama (Tambah/Simpan) - Warna Biru */
+.action-btn-primary {
+    -fx-background-color: #2563eb; /* Biru terang */
+    -fx-text-fill: white;
+    -fx-font-weight: 600;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px 18px;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+}
+.action-btn-primary:hover {
+    -fx-background-color: #1d4ed8; /* Biru lebih gelap */
+}
+
+/* Tombol Aksi Sekunder (Edit) - Warna Oranye */
+.action-btn-edit {
+    -fx-background-color: #f97316; /* Oranye */
+    -fx-text-fill: white;
+    -fx-font-weight: 600;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px 18px;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+}
+.action-btn-edit:hover {
+    -fx-background-color: #ea580c; /* Oranye lebih gelap */
+}
+
+/* Tombol Aksi Batal (di dalam form) - Warna Abu-abu */
+.action-btn-cancel {
+    -fx-background-color: #f1f5f9; /* Abu-abu sangat terang */
+    -fx-text-fill: #475569;
+    -fx-font-weight: 600;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px 18px;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+    -fx-border-color: #e2e8f0;
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+}
+.action-btn-cancel:hover {
+    -fx-background-color: #e2e8f0; /* Abu-abu lebih gelap */
+    -fx-border-color: #cbd5e1;
+}

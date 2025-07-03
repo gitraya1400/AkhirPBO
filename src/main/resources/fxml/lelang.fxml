@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane styleClass="dashboard-container" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chrastis.controller.LelangController">
+    <top>
+        <HBox fx:id="navbar" alignment="CENTER_LEFT" spacing="15.0" styleClass="lelang-header">
+            <padding><Insets bottom="15.0" left="20.0" right="20.0" top="15.0" /></padding>
+            <children>
+                <Text styleClass="navbar-logo" text="🏆 Lelang Penempatan Kerja" />
+                <Region HBox.hgrow="ALWAYS" />
+                <VBox alignment="CENTER_RIGHT">
+                    <children>
+                        <Text text="Kredit Tersisa:" />
+                        <Text fx:id="kreditText" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="0" />
+                    </children>
+                </VBox>
+                <Button fx:id="backButton" onAction="#handleBack" text="← Kembali" styleClass="modern-back-button" />
+            </children>
+        </HBox>
+    </top>
+    <center>
+        <SplitPane dividerPositions="0.4" style="-fx-background-color: transparent;">
+            <items>
+                <VBox spacing="15.0" style="-fx-padding: 20;">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" spacing="10.0">
+                            <children>
+                                <Text text="Daftar Formasi Tersedia" styleClass="section-title" />
+                                <Region HBox.hgrow="ALWAYS" />
+                                <ComboBox fx:id="tahunLelangFilterCombo" styleClass="filter-combo" promptText="Filter Tahun" />
+                            </children>
+                        </HBox>
+
+                        <TableView fx:id="lelangTable" styleClass="lelang-table" VBox.vgrow="ALWAYS">
+                            <columns>
+                                <TableColumn fx:id="lokasiColumn" prefWidth="250.0" text="Lokasi Penempatan" />
+                                <TableColumn fx:id="tahunLelangColumn" prefWidth="100.0" text="Tahun Lulus" />
+                                <TableColumn fx:id="kuotaColumn" prefWidth="70.0" text="Kuota" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </VBox>
+
+                <ScrollPane fitToWidth="true" style="-fx-background-color: transparent;">
+                    <content>
+                        <VBox fx:id="detailPane" spacing="15.0" style="-fx-padding: 20;">
+                            <children>
+                                <Text fx:id="detailLokasiText" styleClass="section-title" text="Pilih Formasi untuk Melihat Detail" wrappingWidth="450" />
+
+                                <GridPane hgap="10" vgap="10">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="120.0" />
+                                        <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <Label text="Deskripsi:" styleClass="field-label" />
+                                        <Label text="Minimal Kredit:" styleClass="field-label" GridPane.rowIndex="1" />
+                                        <Label text="Batas Waktu:" styleClass="field-label" GridPane.rowIndex="2" />
+                                        <Text fx:id="detailDeskripsiText" wrappingWidth="400.0" GridPane.columnIndex="1" />
+                                        <Text fx:id="detailMinKreditText" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                        <Text fx:id="detailTglSelesaiText" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    </children>
+                                </GridPane>
+
+                                <HBox fx:id="bidBox" alignment="CENTER_LEFT" spacing="10.0">
+                                    <children>
+                                        <Label text="Jumlah Tawaran:" styleClass="field-label" />
+                                        <Spinner fx:id="bidSpinner" editable="true" prefWidth="150.0" />
+                                        <Button fx:id="ikutLelangButton" onAction="#handleIkutLelang" styleClass="action-btn-warning" text="Tawar Formasi Ini" />
+                                    </children>
+                                </HBox>
+
+                                <Button fx:id="tarikTawaranButton" onAction="#handleTarikTawaran" maxWidth="1.7976931348623157E308" styleClass="action-btn-danger" text="Tarik Tawaran dari Formasi Ini" />
+
+                                <Separator />
+
+                                <Text text="Papan Peringkat Sementara" styleClass="subsection-title" />
+                                <TableView fx:id="peringkatTable" styleClass="modern-table" VBox.vgrow="ALWAYS">
+                                    <columns>
+                                        <TableColumn fx:id="peringkatRankColumn" prefWidth="50.0" text="Rank" />
+                                        <TableColumn fx:id="peringkatNamaColumn" prefWidth="250.0" text="Nama Mahasiswa" />
+                                        <TableColumn fx:id="peringkatTawaranColumn" prefWidth="120.0" text="Jumlah Tawaran" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </VBox>
+                    </content>
+                </ScrollPane>
+            </items>
+        </SplitPane>
+    </center>
+</BorderPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox spacing="15.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <padding><Insets top="20" right="20" bottom="20" left="20" /></padding>
+    <children>
+        <Text text="Manajemen Formasi Lelang" styleClass="section-title" />
+        <HBox spacing="10.0">
+            <children>
+                <Button fx:id="tambahLelangBtn" text="✚ Tambah Lelang Baru" />
+                <Button fx:id="editLelangBtn" text="✎ Edit Lelang Terpilih" />
+                <Button fx:id="batalkanLelangBtn" text="❌ Batalkan Lelang" styleClass="action-btn-danger" />
+            </children>
+        </HBox>
+        <TableView fx:id="lelangTable">
+            <columns>
+                <TableColumn fx:id="lokasiColumn" text="Lokasi" />
+                <TableColumn fx:id="tahunColumn" text="Tahun" />
+                <TableColumn fx:id="kuotaColumn" text="Kuota" />
+                <TableColumn fx:id="minimalKreditColumn" text="Min. Kredit" />
+                <TableColumn fx:id="statusColumn" text="Status" />
+            </columns>
+        </TableView>
+        <Separator/>
+        <Text text="Aksi Finalisasi" styleClass="subsection-title" />
+        <Button fx:id="finalisasiBtn" text="🏆 Tutup Lelang & Umumkan Pemenang" styleClass="action-btn-warning"/>
+    </children>
+</VBox>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" spacing="40.0" styleClass="login-container" stylesheets="@../css/styles.css"
+      xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.chrastis.controller.LoginController">
+
+    <children>
+        <!-- Logo dan Branding Section -->
+        <VBox alignment="CENTER" spacing="15.0">
+            <children>
+                <!-- Logo Image -->
+                <ImageView fitHeight="220.0" fitWidth="211.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/logo_stat_credit.png"/>
+                    </image>
+                </ImageView>
+
+                <!-- STAT CREDIT Text -->
+                <HBox alignment="CENTER" styleClass="stat-credit-logo" spacing="8.0">
+                    <children>
+                        <Text styleClass="stat-text" text="STAT" />
+                        <Text styleClass="spacing-text" text="  " />
+                        <Text styleClass="credit-text" text="CREDIT" />
+                    </children>
+                </HBox>
+
+                <!-- Subtitle -->
+                <Text styleClass="system-subtitle" text="Masuk ke sistem kredit mahasiswa" />
+            </children>
+        </VBox>
+
+        <!-- Form Login -->
+        <VBox alignment="CENTER" spacing="25.0" styleClass="login-form" maxWidth="350.0">
+            <children>
+                <VBox spacing="20.0" maxWidth="320.0">
+                    <children>
+                        <!-- NIM Field -->
+                        <VBox spacing="8.0">
+                            <children>
+                                <Label text="NIM / ID Admin" styleClass="form-label" />
+                                <TextField fx:id="nimField" promptText="Masukkan NIM atau ID" styleClass="modern-textfield" />
+                            </children>
+                        </VBox>
+
+                        <!-- Password Field -->
+                        <VBox spacing="8.0">
+                            <children>
+                                <Label text="Password" styleClass="form-label" />
+                                <PasswordField fx:id="passwordField" promptText="Masukkan password" styleClass="modern-textfield" />
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+
+                <!-- Login Button -->
+                <Button fx:id="loginButton" onAction="#handleLogin" text="LOGIN" styleClass="login-button" />
+
+                <!-- Info Text -->
+                <VBox alignment="CENTER" spacing="8.0">
+                    <children>
+                        <Text styleClass="footer-tagline" text="🔒 Sistem aman dan terpercaya" />
+                        <Text styleClass="status-text" text="Gunakan NIM untuk mahasiswa atau ID untuk admin" />
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+
+        <!-- Footer -->
+        <VBox alignment="CENTER" spacing="5.0">
+            <children>
+                <Text styleClass="footer-copyright" text="© 2025 STAT CREDIT - Politeknik Statistika STIS" />
+                <Text styleClass="footer-tagline" text="Modern • Secure • Reliable" />
+            </children>
+            <VBox.margin>
+                <Insets top="20.0"/>
+            </VBox.margin>
+        </VBox>
+
+    </children>
+</VBox>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane styleClass="admin-container" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chrastis.controller.AdminController">
+    <top>
+        <HBox fx:id="navbar" alignment="CENTER_LEFT" spacing="15.0" styleClass="navbar">
+            <padding><Insets bottom="15.0" left="20.0" right="20.0" top="15.0" /></padding>
+            <children>
+                <Text fx:id="headerTitle" styleClass="navbar-logo" text="⚙️ Admin Panel" />
+                <Region HBox.hgrow="ALWAYS" />
+                <Button fx:id="backButton" onAction="#handleBack" text="← Kembali ke Dashboard" styleClass="modern-back-button"/>
+            </children>
+        </HBox>
+    </top>
+    <left>
+        <VBox style="-fx-background-color: #f8fafc; -fx-padding: 15; -fx-border-color: #e2e8f0; -fx-border-width: 0 1 0 0;">
+            <children>
+                <VBox fx:id="kreditMenuBox" managed="false" spacing="8.0" visible="false">
+                    <children>
+                        <Button onAction="#handleAdminMenuClick" text="Verifikasi Kredit" styleClass="admin-menu-button" maxWidth="Infinity" />
+                        <Button onAction="#handleAdminMenuClick" text="Riwayat Kredit" styleClass="admin-menu-button" maxWidth="Infinity" />
+                        <Button onAction="#handleAdminMenuClick" text="Manajemen Lelang" styleClass="admin-menu-button" maxWidth="Infinity" />
+                        <Button onAction="#handleAdminMenuClick" text="Manajemen Event" styleClass="admin-menu-button" maxWidth="Infinity" />
+                    </children>
+                </VBox>
+                <VBox fx:id="kopmaMenuBox" managed="false" spacing="8.0" visible="false">
+                    <children>
+                        <Button onAction="#handleAdminMenuClick" text="Verifikasi KOPMA" styleClass="admin-menu-button" maxWidth="Infinity" />
+                        <Button onAction="#handleAdminMenuClick" text="Riwayat KOPMA" styleClass="admin-menu-button" maxWidth="Infinity" />
+                        <Button onAction="#handleAdminMenuClick" text="Manajemen Barang KOPMA" styleClass="admin-menu-button" maxWidth="Infinity" />
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </left>
+    <center>
+        <StackPane fx:id="contentStackPane">
+            <children>
+                <VBox fx:id="verifikasiKreditPane"  spacing="15.0" visible="false" managed="false" styleClass="content-container">
+                    <padding><Insets top="20" right="20" bottom="20" left="20" /></padding>
+                    <children>
+                        <HBox alignment="CENTER_LEFT"><Text text="Verifikasi Pengajuan Kredit" styleClass="section-title" /><Region HBox.hgrow="ALWAYS" /><Label fx:id="pendingCountLabel" styleClass="pending-count" text="Menunggu: 0" /></HBox>
+                        <TableView fx:id="pengajuanTable" styleClass="modern-table" VBox.vgrow="ALWAYS">
+                            <columns>
+                                <TableColumn fx:id="pengajuanNamaColumn" text="Nama" prefWidth="120.0"/>
+                                <TableColumn fx:id="pengajuanPoinColumn" text="Poin" prefWidth="60.0"/>
+                                <TableColumn fx:id="pengajuanKategoriColumn" text="Kategori" prefWidth="120.0"/>
+                                <TableColumn fx:id="pengajuanDeskripsiColumn" text="Deskripsi" prefWidth="250.0"/>
+                                <TableColumn fx:id="pengajuanBuktiColumn" text="Bukti" prefWidth="80.0"/>
+                                <TableColumn fx:id="pengajuanAksiColumn" text="Aksi" prefWidth="180.0"/>
+                            </columns>
+                        </TableView>
+                    </children>
+                </VBox>
+
+                <VBox fx:id="riwayatKreditPane" spacing="15.0" visible="false" managed="false" styleClass="content-container">
+                    <padding><Insets top="20" right="20" bottom="20" left="20" /></padding>
+                    <children><HBox alignment="CENTER_LEFT"><Text text="Riwayat Pengajuan Kredit" styleClass="section-title" /><Region HBox.hgrow="ALWAYS" /><ComboBox fx:id="statusFilterCombo"  styleClass="filter-combo" promptText="Filter Status" /></HBox><TableView fx:id="riwayatAdminTable" styleClass="modern-table" VBox.vgrow="ALWAYS"><columns><TableColumn fx:id="riwayatAdminNamaColumn" text="Nama" prefWidth="120.0"/><TableColumn fx:id="riwayatAdminPoinColumn" text="Poin" prefWidth="70.0"/><TableColumn fx:id="riwayatAdminKategoriColumn" text="Kategori" prefWidth="120.0"/><TableColumn fx:id="riwayatAdminStatusColumn" text="Status" prefWidth="100.0"/><TableColumn fx:id="riwayatAdminKeteranganColumn" text="Keterangan" prefWidth="200.0"/><TableColumn fx:id="riwayatAdminBuktiColumn" text="Bukti" prefWidth="80.0"/></columns></TableView></children>
+                </VBox>
+
+                <VBox fx:id="manajemenLelangPane" spacing="15.0" visible="false" managed="false" styleClass="content-container">
+                    <padding><Insets top="20" right="20" bottom="20" left="20" /></padding>
+                    <children><Text text="Manajemen Formasi Lelang" styleClass="section-title" /><HBox spacing="10.0"><Button fx:id="tambahLelangBtn" onAction="#handleTambahLelang" text="✚ Tambah Lelang" styleClass="action-btn-primary"/><Button fx:id="editLelangBtn" onAction="#handleEditLelang" text="✎ Edit Terpilih" styleClass="action-btn-edit"/><Button fx:id="batalkanLelangBtn" onAction="#handleBatalkanLelang" text="❌ Batalkan" styleClass="action-btn-danger"/></HBox><TableView fx:id="lelangTable" styleClass="modern-table" VBox.vgrow="ALWAYS"><columns><TableColumn fx:id="lelangLokasiColumn" prefWidth="300.0" text="Lokasi"/><TableColumn fx:id="lelangTahunColumn" prefWidth="80.0" text="Tahun"/><TableColumn fx:id="lelangKuotaColumn" prefWidth="80.0" text="Kuota"/><TableColumn fx:id="lelangMinKreditColumn" prefWidth="100.0" text="Min. Kredit"/><TableColumn fx:id="lelangStatusColumn" prefWidth="100.0" text="Status"/></columns></TableView><Separator /><Text text="Aksi Finalisasi" styleClass="subsection-title" /><Button fx:id="finalisasiBtn" onAction="#handleFinalisasiLelang" text="🏆 Tutup Lelang &amp; Umumkan Pemenang" styleClass="action-btn-warning"/></children>
+                </VBox>
+
+                <VBox fx:id="manajemenEventPane" spacing="15.0" visible="false" managed="false" styleClass="content-container">
+                    <padding><Insets top="20" right="20" bottom="20" left="20" /></padding>
+                    <children>
+                        <Text text="Manajemen Event" styleClass="section-title" />
+                        <HBox spacing="10.0">
+                            <Button fx:id="tambahEventBtn" onAction="#handleTambahEvent" text="✚ Tambah Event" styleClass="action-btn-primary"/>
+                            <Button fx:id="editEventBtn" onAction="#handleEditEvent" text="✎ Edit Event" styleClass="action-btn-edit"/>
+                            <Button fx:id="hapusEventBtn" onAction="#handleHapusEvent" text="❌ Hapus Event" styleClass="action-btn-danger"/>
+                        </HBox>
+                        <TableView fx:id="eventTable" styleClass="modern-table" VBox.vgrow="ALWAYS">
+                            <columns>
+                                <TableColumn fx:id="eventTitleColumn" prefWidth="250.0" text="Judul"/>
+                                <TableColumn fx:id="eventDateColumn" prefWidth="150.0" text="Tanggal Event"/>
+                                <TableColumn fx:id="eventDeadlineColumn" prefWidth="150.0" text="Deadline"/>
+                                <TableColumn fx:id="eventStatusColumn" prefWidth="100.0" text="Status"/>
+                            </columns>
+                        </TableView>
+                    </children>
+                </VBox>
+
+                <VBox fx:id="verifikasiKopmaPane" spacing="15.0" visible="false" managed="false" styleClass="content-container">
+                    <padding><Insets top="20" right="20" bottom="20" left="20" /></padding>
+                    <children><Text text="Verifikasi Transaksi KOPMA" styleClass="section-title" /><TableView fx:id="transaksiTable" styleClass="modern-table" VBox.vgrow="ALWAYS"><columns><TableColumn fx:id="transaksiNamaColumn" prefWidth="150.0" text="Nama Mahasiswa"/><TableColumn fx:id="transaksiBarangColumn" prefWidth="180.0" text="Nama Barang"/><TableColumn fx:id="transaksiKodeColumn" prefWidth="130.0" text="Kode Penukaran"/><TableColumn fx:id="transaksiAksiColumn" prefWidth="250.0" text="Aksi"/></columns></TableView></children>
+                </VBox>
+
+                <VBox fx:id="riwayatKopmaPane" spacing="15.0" visible="false" managed="false" styleClass="content-container">
+                    <padding><Insets top="20" right="20" bottom="20" left="20" /></padding>
+                    <children><Text text="Riwayat Transaksi KOPMA" styleClass="section-title" /><TableView fx:id="riwayatKopmaTable" styleClass="modern-table" VBox.vgrow="ALWAYS"><columns><TableColumn fx:id="riwayatKopmaNamaColumn" prefWidth="150.0" text="Nama Mahasiswa"/><TableColumn fx:id="riwayatKopmaBarangColumn" prefWidth="180.0" text="Nama Barang"/><TableColumn fx:id="riwayatKopmaTanggalColumn" prefWidth="120.0" text="Tanggal"/><TableColumn fx:id="riwayatKopmaStatusColumn" prefWidth="120.0" text="Status Akhir"/></columns></TableView></children>
+                </VBox>
+
+                <VBox fx:id="manajemenKopmaPane" spacing="15.0" visible="false" managed="false" styleClass="content-container">
+                    <padding><Insets top="20" right="20" bottom="20" left="20" /></padding>
+                    <children><Text text="Manajemen Barang KOPMA" styleClass="section-title" /><HBox spacing="10.0"><Button fx:id="tambahBarangBtn" onAction="#handleTambahBarang" text="✚ Tambah Barang" styleClass="action-btn-primary"/><Button fx:id="editBarangBtn" onAction="#handleEditBarang" text="✎ Edit Terpilih" styleClass="action-btn-edit"/><Button fx:id="hapusBarangBtn" onAction="#handleHapusBarang" text="❌ Hapus" styleClass="action-btn-danger"/></HBox><TableView fx:id="barangKopmaTable" styleClass="modern-table" VBox.vgrow="ALWAYS"><columns><TableColumn fx:id="barangNamaColumn" prefWidth="250.0" text="Nama Barang"/><TableColumn fx:id="barangKategoriColumn" prefWidth="150.0" text="Kategori"/><TableColumn fx:id="barangHargaColumn" prefWidth="120.0" text="Harga (Kredit)"/><TableColumn fx:id="barangStokColumn" prefWidth="80.0" text="Stok"/></columns></TableView></children>
+                </VBox>
+
+            </children>
+        </StackPane>
+    </center>
+</BorderPane>

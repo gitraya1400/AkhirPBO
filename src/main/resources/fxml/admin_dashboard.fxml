@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane styleClass="dashboard-container" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chrastis.controller.DashboardController">
+    <top>
+        <VBox styleClass="navbar-container">
+            <!-- Main Navbar -->
+            <HBox alignment="CENTER_LEFT" spacing="20.0" styleClass="navbar">
+                <padding>
+                    <Insets bottom="15.0" left="25.0" right="25.0" top="15.0" />
+                </padding>
+                <children>
+                    <!-- Logo Section -->
+                    <VBox styleClass="logo-section" />
+                    <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../image/logo_stat_credit.png" />
+                        </image>
+                    </ImageView>
+
+                    <Region HBox.hgrow="ALWAYS" />
+
+                    <!-- User Info -->
+                    <HBox alignment="CENTER_RIGHT" spacing="15.0" styleClass="user-section">
+                        <children>
+                            <VBox alignment="CENTER_RIGHT">
+                                <children>
+                                    <Text fx:id="welcomeNavText" styleClass="welcome-nav-text" text="Selamat Datang, Andi Wijaya" />
+                                    <Text styleClass="nav-subtitle" text="😊 Have a great day!" />
+                                </children>
+                            </VBox>
+                            <Button fx:id="notificationButton" onAction="#handleNotifications" styleClass="nav-notification-btn" text="🔔" />
+                            <Button fx:id="logoutButton" onAction="#handleLogout" styleClass="nav-logout-btn" text="Logout" />
+                        </children>
+                    </HBox>
+                </children>
+            </HBox>
+        </VBox>
+    </top>
+
+    <left>
+        <VBox prefWidth="280.0" spacing="15.0" styleClass="sidebar">
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+            <children>
+                <!-- Menu Utama Header -->
+                <HBox alignment="CENTER_LEFT" spacing="8.0" styleClass="sidebar-header">
+                    <children>
+                        <Text styleClass="sidebar-header-icon" text="⚙️" />
+                        <Text styleClass="sidebar-header-text" text="Menu Utama" />
+                    </children>
+                </HBox>
+
+                <!-- Menu Buttons -->
+                <VBox spacing="8.0" styleClass="menu-items">
+                    <children>
+                        <Button fx:id="adminButton" maxWidth="1.7976931348623157E308" onAction="#handleAdmin" styleClass="sidebar-menu-button, menu-admin" text="⚙️  Admin Panel" />
+                    </children>
+                </VBox>
+
+                <!-- User Info Area for Students -->
+                <VBox spacing="5.0" styleClass="user-info-sidebar">
+                    <children>
+                        <Text fx:id="welcomeText" styleClass="sidebar-welcome-text" text="Selamat Datang..." />
+                        <Text fx:id="userRole" styleClass="sidebar-user-role" text="Role" />
+                        <HBox fx:id="tahunLulusBox" alignment="CENTER_LEFT" managed="false" spacing="5.0" visible="false">
+                            <children>
+                                <Text styleClass="sidebar-label-bold" text="Tahun Lulus:" />
+                                <Text fx:id="tahunLulusText" styleClass="sidebar-value" text="2025" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </left>
+</BorderPane>

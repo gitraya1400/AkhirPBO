@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<VBox spacing="15.0" style="-fx-padding: 25; -fx-background-color: -surface-color;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chrastis.controller.LelangFormController">
+    <children>
+        <Text fx:id="formTitle" styleClass="section-title" text="Tambah Formasi Lelang Baru" />
+        <GridPane hgap="10" vgap="10">
+            <columnConstraints>
+                <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="120.0" />
+                <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+            </columnConstraints>
+            <children>
+                <Label text="Lokasi" GridPane.rowIndex="0" />
+                <TextField fx:id="lokasiField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                <Label text="Deskripsi" GridPane.rowIndex="1" />
+                <TextArea fx:id="deskripsiArea" prefHeight="80.0" GridPane.columnIndex="1" GridPane.rowIndex="1" styleClass="modern-text-area"/>
+                <Label text="Minimal Kredit" GridPane.rowIndex="2" />
+                <Spinner fx:id="minKreditSpinner" editable="true" maxWidth="Infinity" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Label text="Kuota" GridPane.rowIndex="3" />
+                <Spinner fx:id="kuotaSpinner" editable="true" maxWidth="Infinity" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Label text="Tahun Lelang" GridPane.rowIndex="4" />
+                <Spinner fx:id="tahunSpinner" editable="true" maxWidth="Infinity" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <Label text="Tanggal Selesai" GridPane.rowIndex="5" />
+                <DatePicker fx:id="tanggalSelesaiPicker" maxWidth="Infinity" GridPane.columnIndex="1" GridPane.rowIndex="5" styleClass="modern-date-picker"/>
+            </children>
+        </GridPane>
+        <HBox alignment="CENTER_RIGHT" spacing="10.0">
+            <children>
+                <Button onAction="#handleCancel" text="Batal" styleClass="action-btn-cancel"/>
+                <Button fx:id="saveButton" onAction="#handleSave" styleClass="action-btn-primary" text="Simpan" />
+            </children>
+        </HBox>
+    </children>
+</VBox>
